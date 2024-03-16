@@ -25,19 +25,26 @@
                         <p class="item">
                             <%= i.phone %>
                         </p>
+                        <div class="delete-button">
+                            <a href="">
+                                <i class="fas fa-window-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <% } %>
         </ul>
-        <form action="/create-contact" , method="post" required="true">
-            <input type="text" , name="name" , placeholder="Enter Name" , required="true">
-            <input type="number" , name="phone" , placeholder="Enter phone">
+        <div class="container">
+            <form action="/create-contact" , method="post" required="true">
+                <input type="text" , name="name" , placeholder="Enter Name" , required="true">
+                <input type="number" , name="phone" , placeholder="Enter phone" , required="true">
 
-            <button type="submit" ;
-                style="background-color: slategray; padding: 4px 12px; font-size: 10px; color: white; border-radius: 4px;">
-                Add
-            </button>
-        </form>
+                <button type="submit" ;
+                    style="background-color: slategray; padding: 4px 12px; font-size: 10px; color: white; border-radius: 4px;">
+                    Add
+                </button>
+            </form>
+        </div>
     </div>
     <script type="text/javascript" src="/js/home.js"></script>
 </body>
